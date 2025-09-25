@@ -1,6 +1,5 @@
 package ru.astrainteractive.klibs.kotlinx.collections.immutable.util
 
-
 import kotlinx.serialization.json.Json
 
 internal object JsonConfigurationFactory {

@@ -1,9 +1,5 @@
 package ru.astrainteractive.klibs.kotlinx.collections.immutable
 
-
-import kotlin.test.Test
-import kotlin.test.assertContentEquals
-import kotlin.test.assertEquals
 import kotlinx.collections.immutable.ImmutableList
 import kotlinx.collections.immutable.ImmutableSet
 import kotlinx.collections.immutable.PersistentList
@@ -13,6 +9,9 @@ import kotlinx.collections.immutable.persistentSetOf
 import kotlinx.serialization.Serializable
 import ru.astrainteractive.klibs.kotlinx.collections.immutable.util.JsonConfigurationFactory
 import ru.astrainteractive.klibs.kotlinx.collections.immutable.util.JsonExt.encodeAndDecode
+import kotlin.test.Test
+import kotlin.test.assertContentEquals
+import kotlin.test.assertEquals
 
 class ImmutableCollectionSerializerTest {
 
@@ -110,5 +109,4 @@ class ImmutableCollectionSerializerTest {
                 )
             }
     }
-
 }

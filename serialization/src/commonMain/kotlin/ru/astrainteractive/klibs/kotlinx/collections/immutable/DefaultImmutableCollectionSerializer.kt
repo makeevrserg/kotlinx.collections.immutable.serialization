@@ -1,6 +1,5 @@
 package ru.astrainteractive.klibs.kotlinx.collections.immutable
 
-
 import kotlinx.collections.immutable.ImmutableCollection
 import kotlinx.collections.immutable.ImmutableList
 import kotlinx.collections.immutable.ImmutableSet

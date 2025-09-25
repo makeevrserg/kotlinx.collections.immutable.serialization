@@ -1,14 +1,13 @@
 package ru.astrainteractive.klibs.kotlinx.collections.immutable
 
-
-import kotlin.test.Test
-import kotlin.test.assertEquals
 import kotlinx.collections.immutable.ImmutableMap
 import kotlinx.collections.immutable.PersistentMap
 import kotlinx.collections.immutable.persistentMapOf
 import kotlinx.serialization.Serializable
 import ru.astrainteractive.klibs.kotlinx.collections.immutable.util.JsonConfigurationFactory
 import ru.astrainteractive.klibs.kotlinx.collections.immutable.util.JsonExt.encodeAndDecode
+import kotlin.test.Test
+import kotlin.test.assertEquals
 
 class ImmutableMapSerializerTest {
 
@@ -68,6 +67,4 @@ class ImmutableMapSerializerTest {
                 )
             }
     }
-
-
 }
