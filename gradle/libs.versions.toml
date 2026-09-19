@@ -1,8 +1,8 @@
 [versions]
 # Kotlin
-kotlin-version = "2.3.0" # # https://github.com/JetBrains/kotlin
-klibs-gradleplugin = "1.11.4" # https://github.com/makeevrserg/gradle-plugin
-gradle-android = "9.0.0" # https://developer.android.com/build#top-level
+kotlin-version = "2.4.10" # # https://github.com/JetBrains/kotlin
+klibs-gradleplugin = "2.8.0" # https://github.com/makeevrserg/gradle-plugin
+gradle-android = "9.3.1" # https://developer.android.com/build#top-level
 kotlin-immutable = "0.4.0"
 kotlin-serialization-runtime = "1.10.0"
 [libraries]
@@ -11,17 +11,12 @@ kotlin-immutable = { module = "org.jetbrains.kotlinx:kotlinx-collections-immutab
 [plugins]
 kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin-version" }
 kotlin-multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin-version" }
-gradle-android = { id = "com.android.library", version.ref = "gradle-android" }
-# klibs - core
+gradle-android = { id = "com.android.kotlin.multiplatform.library", version.ref = "gradle-android" }
+# klibs
+klibs-gradle-android-namespace = { id = "ru.astrainteractive.gradleplugin.android.namespace", version.ref = "klibs-gradleplugin" }
+klibs-gradle-android-sdk = { id = "ru.astrainteractive.gradleplugin.android.sdk", version.ref = "klibs-gradleplugin" }
 klibs-gradle-detekt = { id = "ru.astrainteractive.gradleplugin.detekt", version.ref = "klibs-gradleplugin" }
-klibs-gradle-detekt-compose = { id = "ru.astrainteractive.gradleplugin.detekt.compose", version.ref = "klibs-gradleplugin" }
-klibs-gradle-dokka-root = { id = "ru.astrainteractive.gradleplugin.dokka.root", version.ref = "klibs-gradleplugin" }
-klibs-gradle-dokka-module = { id = "ru.astrainteractive.gradleplugin.dokka.module", version.ref = "klibs-gradleplugin" }
-klibs-gradle-java-core = { id = "ru.astrainteractive.gradleplugin.java.core", version.ref = "klibs-gradleplugin" }
+klibs-gradle-dokka = { id = "ru.astrainteractive.gradleplugin.dokka", version.ref = "klibs-gradleplugin" }
+klibs-gradle-java-version = { id = "ru.astrainteractive.gradleplugin.java.version", version.ref = "klibs-gradleplugin" }
 klibs-gradle-publication = { id = "ru.astrainteractive.gradleplugin.publication", version.ref = "klibs-gradleplugin" }
-klibs-gradle-rootinfo = { id = "ru.astrainteractive.gradleplugin.root.info", version.ref = "klibs-gradleplugin" }
-# klibs - android
-klibs-gradle-android-core = { id = "ru.astrainteractive.gradleplugin.android.core", version.ref = "klibs-gradleplugin" }
-klibs-gradle-android-compose = { id = "ru.astrainteractive.gradleplugin.android.compose", version.ref = "klibs-gradleplugin" }
-klibs-gradle-android-apk-sign = { id = "ru.astrainteractive.gradleplugin.android.apk.sign", version.ref = "klibs-gradleplugin" }
-klibs-gradle-android-apk-name = { id = "ru.astrainteractive.gradleplugin.android.apk.name", version.ref = "klibs-gradleplugin" }
+klibs-gradle-rootinfo = { id = "ru.astrainteractive.gradleplugin.rootinfo", version.ref = "klibs-gradleplugin" }
